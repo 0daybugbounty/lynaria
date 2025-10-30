@@ -1,0 +1,34 @@
+/* Force la version mobile à s'afficher sur toutes les tailles d'écran */
+@media all {
+  /* Suppression complète de la version desktop */
+  #what-we-do.section-row {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    width: 0 !important;
+    clip: rect(0, 0, 0, 0) !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  
+  /* Affichage de la version mobile */
+  .mobile-row {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    max-width: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .row-m {
+    display: none !important;
+    width: 0 !important;
+    max-width: 0 !important;
+  }
+}
